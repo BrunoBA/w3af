@@ -34,12 +34,12 @@ Segurança de Redes de Computadores na UNICAP.</p>
   </span>
         </a>O que é o W3af?</h3>
 
-<p>&nbsp;&nbsp;O W3af (Web Application Attack and Audit Framework) é uma ferramenta que explora as vunerabilidadade de qualquer tipo de sistema web, 
-informando e demonstrando ao usuário as
-que o mesmo deixa para qualquer tipo de pessoa mal intensionada.
+<p>&nbsp;&nbsp;O W3af (Web Application Attack and Audit Framework) é uma ferramenta que explora as vunerabilidadade de qualquer 
+tipo de sistema web, informando e demonstrando ao usuário asque o mesmo deixa para qualquer tipo de pessoa mal intensionada.
 <br>
-&nbsp;&nbsp;Mesmo com um filosofia voltada para a comunidade, e a segurança dos sistemas web, o W3af é uma ferramenta tão podorosa e rubusta, que não 
-tem apenas ferramentas para defesa e consultoria de vunerabilidades, este também se mostra capaz de usufruir desses brechas para simular
+&nbsp;&nbsp;Mesmo com um filosofia voltada para a comunidade, e a segurança dos sistemas web, o W3af é uma ferramenta tão podorosa 
+e rubusta, que não tem apenas ferramentas para defesa e consultoria de vunerabilidades, este também se mostra capaz de usufruir 
+  desses brechas para simular
 ataque real ao sistema</p>
       
       
@@ -55,15 +55,44 @@ cd w3af/
       
       A instalação da ferramenta é bem simples. Lembrando que é preciso ter o git instalado em sua máquina.
       <br>
-      Caso esteja vendo isso de um computador com windows, sugiro que <a href="www.w3af.org/download">baixe</a> 
+      Caso esteja vendo isso de um computador com windows, sugiro que <a href="https://sourceforge.net/projects/w3af/" 
+                                                                         class="button">baixe</a> 
       diretamente do site oficial, ou instale uma versão do Ubuntu modificada, voltada para as pessoas que tem 
-      o mesmo interesse que você, a busca por conhecimentos Hacker. Tanto o <a href="https://kalilinux16.wordpress.com/2016/10/30/primeiro-post-do-blog/">Kali Linux</a>,
-      quanto o <a href="https://kalilinux16.wordpress.com/2016/10/30/primeiro-post-do-blog/">Back Box</a> já apresentam o 
-      W3af instalado por padrão.( Clique em cada um dos links para mais informações sobre essas versões modificadas do linux
+      o mesmo interesse que você, a busca por conhecimentos Hacker. Tanto o 
+      <a href="http://segpentest.wixsite.com/index" class="button" >Back Box</a>,
+      quanto o <a href="https://kalilinux16.wordpress.com/2016/10/30/primeiro-post-do-blog/" class="button" >Kali Linux</a> 
+      já apresentam o W3af instalado por padrão.( Clique em cada um dos links para mais informações sobre essas versões 
+      modificadas do linux
       ).
-      
-
+      <br>
+      Caso queira instalar o pelo MasOSX o processo é bem mais simples que uma instalação no Windows. 
 <h3>
+<pre>  
+  sudo xcode-select --install
+  sudo port selfupdate
+  sudo port upgrade outdated
+  sudo port install python27
+  sudo port select python python27
+  ./w3af_console
+  . /tmp/w3af_dependency_install.sh
+</pre>
+  <br>
+  <h3>
+    Para a atualização do  W3af ( por instalações via terminal ). Basta executar o seguine código... 
+    </h3>
+  <br>
+  <pre>  
+  cd w3af/
+  git pull
+</pre>
+  <br>
+  <h3>
+   Isso vai trazer a o código mais atualizado do sistema. Para qualquer versão UNIX você pode fazer isso! ( Para manter 
+   o W3af atualizado em versões de Windows, sugiro que baixe de novo do site oficial, ou clique em settints > Update, o submenu
+    pode mudar dependendo da sua versão da ferramenta ).
+   </h3>
+    
+  
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" 
 class="octicon octicon-link"></span></a>O criador</h3>
 
@@ -76,22 +105,31 @@ programação em Python, criando assim uma ferramenta altamente escalável que t
 e tornar o mund Web cada vez mais seguro, longde fragilidades de segurança.</p>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" 
+class="octicon octicon-link"></span></a>Módulos
+</h3>
+<p>
+  Não existe nenhum tipo de mistério em manipular o W3af, sua interface gráfica é bem intuitiva.. Como mostra a imagem a seguir, 
+  Basta selecionar a URL em que deseja verificar a vulnerabilidade e clicar em start!
+</p>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true">
+<span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or 
+<a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/BrunoBA/w3af">W3af</a> is maintained by <a href="https://github.com/BrunoBA">BrunoBA</a>.</span>
+<footer class="site-footer">
+  <span class="site-footer-owner"><a href="https://github.com/BrunoBA/w3af">W3af</a> 
+    is maintained by <a href="https://github.com/BrunoBA">BrunoBA</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+  <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> 
+using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by 
+    <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+</footer>
 
-    </section>
+</section>
 
   
   </body>
