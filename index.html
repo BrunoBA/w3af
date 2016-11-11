@@ -160,7 +160,27 @@ class="octicon octicon-link"></span></a>Módulos
 </p>
   <br>
       <h4>Crawl</h4>
-      <p></p>
+      <p>Eles têm apenas uma função, encontrar novos URLs, formulários e outros pontos de injeção. Um exemplo 
+      clássico de um plugin de descoberta é a web spider ( que como uma teia de aranha, vai linkando cada
+      espaço de ataque anexando a sua rede de brechas em potencial ).Este módulo tem um URL como entrada e 
+        retorna um ou mais pontos de injeção. </p>
+      
+      <h4>Audit</h4>
+      <p>Pegue os pontos de injeção encontrados pelos plugins anterior e envie dados identificar vulnerabilidades. 
+       Para exemplo deste módulo de auditoria use a famosa vulnerabilidades de injeção de SQL enviando <code>a'b "c</code> para 
+       todos os pontos de injeção.
+      <br>
+        Para a situação anterior <i>uma injeção de código SQL</i> este procedimento, retornaria um Shell do servidor, ou uma
+      própria janela para consulta da estrutura de tabela do atacado. Para outros exemplos como acesso SSH, o atacante pode
+      fazer uso para algum tipo de instalação de Sofwares mal intencionados, transformar o computador atacado como um zumbi 
+      para fins criminosos, ou até mesmo usa-lo como um próprio servidor. <b>Mesmo com esse tipo de posicionamento, Andrés 
+        Riancho não é a favor ataques criminosos! Está ferramenta foi feito para conhecimento hacker, para tonar a Web um ambiente
+        mais seguro, sabendo como se ataca, podemos nos defender.</b></p>
+      
+      <h4>Attack</h4>
+      <p>Se está aqui, presumo que esteja procurando por conhecimentos de invasão. Muito bem, este é um dos módulos
+      mais famosos e cobiçados do W3af! Sim, este módulo faz uso das anteriores, onde já encontramos o erro, identificamos
+      da melhor forma, e agora.. Ao invés de informa-lo ao seu dono, usaremos como arma.</p>
       
 <img src="Captura de Tela 2016-11-11 às 00.07.56.png" alt="Interface">
 <p><i> 
