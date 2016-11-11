@@ -140,9 +140,7 @@ sudo port select python python27
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" 
 class="octicon octicon-link"></span></a>Módulos
-</h3>
-
-<br>
+      </h3>
 <img src="Captura de Tela 2016-10-18 às 20.30.48.png  " alt="HackersDaPesada">
       <p><i>Aqui vemos que, até mesmo a interface do console do W3af é amigável. Riancho trouxe novos seguidores 
         mas não esqueceu dos "Hackers da pesada"!</i></p>
@@ -190,9 +188,37 @@ class="octicon octicon-link"></span></a>Módulos
       função de conhecer qual o ambiente em que o servidor usa para hospedagem e sua respectiva versão, ( para ataques mais
       precisos isso é de grande valor, descobrir uma versão desatualizada de configurações é um <b>GRAVE</b> erro de segurança!
         <br>
-        Procura por palavras chaves como <i>email</i>, <i>email</i>
+        Procura por palavras chaves como <i>email</i>, <i>Password</i>, <i>@</i> ou qualquer palavra que remete ao usuário, e que
+        possa de alguma forma obter uma facilidade em descobrir suas credenciais para acesso privado.
       </p>
       
+ <h3>Mãos a Obra</h3>
+ <p>Agora vemos ver, passo a passo como usar a ferramenta W3af na prática! A interface com usuário é tão
+      fácil quanto a utilização do terminal.</p>
+      
+<br>
+<img src="Executando.png" alt="AbrindoW3af">
+      <p>Para abrir o W3af basta digitar <code>./w3af_console</code> como na imagem acima</p>
+
+<br>
+<img src="ExemplificandoGrep.png" alt="MostrandoPlugins">
+      <p>Aqui podemos ver como estão separados os tipos de plugins, mas não precisa se preucupar! Neste exemplo
+      vamos usar plugins que já estão configurados</p>
+<br>
+<img src="EntrandoMenuProfiles.png" alt="MostrandoProfiles">
+<img src="ListandoProfiles.png" alt="ListandoProfiles">
+      <p>Cada um desses perfis já constam com os plugins ativados, basta selecionar qual vai querer. Para cada finalidade
+      de existe um perfil configurado. O W3af tem um perfil que mostra as maiores vulnerabilidades da OWASP sempre atualizados.
+     <br>
+        Para escolher o perfil, basta digitar <code>Use</code> e o nome de um dos perfis já configurados, que para nosso teste
+        o <code>OWASP_TOP10</code>.
+ </p>
+<img src="SelecionandoProfile.png" alt="UseOWASP_TOP10">
+      <p>Agora temos tudo que precisamos para explorar/verificar as vulnerabilidades de um sistema. Para isso, basta
+        selecionarmos o alvo! Digitando <code>target = "<i>colocando seu alvo aqui</i>"</code>.</p>
+<img src="Rodando.png" alt="Rodando">
+      <p>Só digitar <code>start</code> e  verificar a saida no terminal, com as vulnerabilidades descritas!</p>
+<br>
       
       
 <h3>
